@@ -21,7 +21,7 @@ ARG DEPENDENCIES="autoconf \
 RUN apt-get update && \
     apt-get install -y --no-install-recommends ${DEPENDENCIES} && \
     rm -rf /var/lib/apt/lists/*
-ARG DOWNLOAD_LINK=http://registrationcenter-download.intel.com/akdlm/irc_nas/13231/l_openvino_toolkit_p_2019.0.000.tgz
+ARG DOWNLOAD_LINK=http://registrationcenter-download.intel.com/akdlm/irc_nas/16612/l_openvino_toolkit_p_2020.2.120.tgz
 WORKDIR /tmp
 RUN curl -LOJ "${DOWNLOAD_LINK}" && \
     tar -xzf ./*.tgz && \
